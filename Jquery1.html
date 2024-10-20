@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+<script>
+    $(document).ready(function(){
+        $("#fbtn").click(function(){
+            $("p").prepend("<b>append text</b>.");
+        });
+    $(document).ready(function(){
+        $("ol").prepend("<li>Add item</li>");
+    });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("p").filter(".intro").css("background-color","blue");
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("#stb").on("keyup",function(){
+            var value=$(this).val().toLowerCase();
+            $("#stable tr").filter(function(){
+             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
+
+</script>
+
+
+</head>
+<body>
+    <p id="panel1">This ia paragraphing</p>
+<input type="button" id="fbtn" value="click"/>
+<input type="button" id="fbtn1" value="click"/>
+<ol>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>four</li>
+</ol>
+
+<p>my name is nani</p>
+<p class="intro">pg one</p>
+<p class="intro">pg two</p>
+<p>this end paragraph</p>
+
+
+<input id="stb" type="text" placeholder="search..">
+<br><br>
+
+<table>
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>lastname</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody id="stable">
+        <tr>
+            <td>nani</td>
+            <td>poleboyina</td>
+            <td>nanipython2022@gnail.com</td>
+        </tr>
+        <tr>
+            <td>7hills</td>
+            <td>poleboyina</td>
+            <td>nani@gmail.com</td>
+        </tr>
+        <tr>
+            <td>yedukondalu</td>
+            <td>poleboyina</td>
+            <td>kondalpoleboyina5@gmail.com</td>
+        </tr>
+    </tbody>
+</table>
+
+    
+</body>
+</html>

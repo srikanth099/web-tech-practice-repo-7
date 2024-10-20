@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Document object model</title>
+      <style>
+        div{
+            width: 500px;
+            height: 500px;
+            background: cyan;
+            background-color:hsl(20%,30%,50%);
+            border: 2px solid black;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+        }
+        .grandparent{
+            margin: 10px 10px 10px 10px;
+            padding:10px 10px  ;
+            background:yellow ;
+            display: inline-block;
+            border:1px solid black;
+            display: flex;
+            width: 300px;
+            height:300px ;
+
+        }
+        .parent{
+            margin: 10px 10px 10px 10px;
+            padding:10px 10px  ;
+            border:1px solid black;
+            background:green ;
+            display: flex;
+            width: 200px;
+            height:200px ;
+        }
+        .child1{
+            margin: 10px 10px 10px 10px;
+            padding:10px 10px  ;
+            background:yellow ;
+            border:1px solid black;
+            display: flex;
+            width: 100px;
+            height:100px ;
+        }
+      </style>
+
+</head>
+<body>
+    <div class="grandparent" id="#grandparent"></div>
+    <div class="parent" id="parent"></div>
+    <div class="child1"id=child1></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+</body>
+</html>

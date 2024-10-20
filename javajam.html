@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>java jam</title>
+    <link rel="stylesheet"  href="css/all.min.css">
+  <link rel="stylesheet"  href="css/fontawesome.min.css">
+  <link rel="stylesheet"  href="style.css">
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 1px;
+  padding: 1px;
+}
+
+.grid-container > div {
+  background-color:black;
+  text-align: center;
+  padding: 0px 0;
+  font-size: 30px;
+  color: white;
+  height: 150%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item2">
+    <!-- <h1>icon</h1> -->
+    <!-- <i class="fa-brands fa-java"></i> -->
+    <h1> <div class="a"><i class="fa-brands fa-java"></i></i></div></h1> <br/>
+    <p>Home</p>
+   <p> Menu </p>
+   <p>Music</p>
+   <p>Jobs</p>
+ </div>
+
+  <div style="background-color:orange; color: black; width: 170%; text-align: center;" class="item3" align="center">JavaJam Coffee House</div>
+
+  <div class="item5" style="background-color: white; color: black;">
+    <h2>Jobs at JavaJam</h2>
+    <p style="font-size:medium;">Java is the name of a programming language
+     created by Sun Microsystems.<br/>
+      This company was bought out by Oracle Corporation,<br/>
+       which continues to keep it up to date.</p>
+
+    <form>
+      <label>Name:</label>
+      <input type="text" name=" enter your name"><br/>
+      <label>Course:</label>
+      <input type="text"><br/>
+      <label>Mobile</label>
+      <input type="text"><br/>
+       <td>
+          <input type="submit">
+          <input type="reset">
+      </td>
+    </form>   
+
+  </div> 
+</div>
+</body>
+</html>

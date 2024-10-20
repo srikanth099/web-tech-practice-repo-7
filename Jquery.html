@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+   <script>
+    $(document).ready(function()
+    {
+        $('#fbtn').click(function()
+        {
+            alert("hai")
+        });
+    });
+
+   </script>
+   <script>
+    $(document).ready(function(){
+        $("#fbtn").click(function(){
+            $("#panell").css("color","blue").slideUp(3000).slideDown(2000);
+        });
+    });
+   </script> 
+
+</head>
+<body>
+<p id="panel1">This ia paragraphing</p>
+<input type="button" id="fbtn" value="click"/>
+    
+</body>
+</html>
+<!-- combined function or chain method-->

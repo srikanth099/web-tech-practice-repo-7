@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+</head>
+<body>
+  <div id="grandparent">grandparent1</div>
+  <div id="parent"> parent2</div>
+  <div id="child"> child3</div>
+  <h1 id="header">NAME</h1>
+  <button on click="addEventListeren(e)">click me</button>
+ 
+  <script>
+
+    /*let grandparent=document.getElementById("grandparent")
+    let parent=document.getElementById("parent")
+    let child=document.getElementById("child")
+    const header=document.getElementById("header")
+    grandparent.style.border="2px solid green" 
+    parent.style.backgroundColor="red"   */
+
+    const grandparent=document.querySelector("#grandparent")
+    const parent=document.querySelector("#parent")
+    grandparent.addEventListener("click",e=>{
+      console.log("e")
+    
+
+    })
+    grandparent.addEventListener("click",e=>{
+      console.log("grandparent143")
+    
+
+    })
+    grandparent.addEventListener("click",e=>{
+      console.log("parent123")
+    
+
+    })
+    grandparent.addEventListener("click",e=>{
+      console.log("child123")
+    
+
+    })
+    grandparent.addEventListener("click",e=>{
+      console.log("document")
+    
+
+    })
+    grandparent.addEventListener("click",e=>{
+      console.log("HTMl elements")
+    
+
+    })
+    grandparent.addEventListener("click",e=>{
+      console.log("body")
+    
+
+    })
+    grandparent.addEventListener("click",e=>{
+      console.log("title")
+    
+
+    })
+
+      
+
+  
+      
+
+    
+
+  </script>
+
+</body>
+</html>
